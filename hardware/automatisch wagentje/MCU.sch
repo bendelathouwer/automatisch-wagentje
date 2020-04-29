@@ -1,0 +1,268 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Parallax:P8X32A-D40 U?
+U 1 1 5EA95E1E
+P 5750 3170
+F 0 "U?" V 5690 3165 50  0000 C CNN
+F 1 "P8X32A-D40" V 5760 3165 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 5750 4370 50  0001 C CNN
+F 3 "https://www.parallax.com/sites/default/files/downloads/P8X32A-Propeller-Datasheet-v1.4.0_0.pdf" H 5750 3170 50  0001 C CNN
+	1    5750 3170
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3970 6700 3970
+Wire Wire Line
+	6450 4070 6700 4070
+Wire Wire Line
+	6450 3770 6700 3770
+Wire Wire Line
+	6450 3870 6700 3870
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EA980A9
+P 5695 1880
+F 0 "#PWR?" H 5695 1730 50  0001 C CNN
+F 1 "+3.3V" H 5710 2053 50  0000 C CNN
+F 2 "" H 5695 1880 50  0001 C CNN
+F 3 "" H 5695 1880 50  0001 C CNN
+	1    5695 1880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2070 5650 1880
+Wire Wire Line
+	5750 2070 5750 1880
+Wire Wire Line
+	5650 1880 5695 1880
+Connection ~ 5695 1880
+Wire Wire Line
+	5695 1880 5750 1880
+Wire Wire Line
+	5710 4435 5710 4380
+Wire Wire Line
+	5650 4380 5650 4270
+Wire Wire Line
+	5750 4380 5750 4270
+Wire Wire Line
+	5650 4380 5710 4380
+Connection ~ 5710 4380
+Wire Wire Line
+	5710 4380 5750 4380
+$Comp
+L programmers:propstick CON?
+U 1 1 5EA9A919
+P 1330 900
+F 0 "CON?" H 1422 635 50  0000 C CNN
+F 1 "propstick" H 1422 726 50  0000 C CNN
+F 2 "" H 1330 900 50  0001 C CNN
+F 3 "" H 1330 900 50  0001 C CNN
+	1    1330 900 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1530 900  1710 900 
+Wire Wire Line
+	1530 1000 1720 1000
+Wire Wire Line
+	1530 1100 1725 1100
+Wire Wire Line
+	1530 1200 1730 1200
+Wire Wire Line
+	1730 1200 1730 1300
+$Comp
+L ESP32-PoE-ISO_Rev_C:GND #PWR?
+U 1 1 5EA99551
+P 5710 4435
+F 0 "#PWR?" H 5710 4185 50  0001 C CNN
+F 1 "GND" H 5715 4262 50  0000 C CNN
+F 2 "" H 5710 4435 60  0000 C CNN
+F 3 "" H 5710 4435 60  0000 C CNN
+	1    5710 4435
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP32-PoE-ISO_Rev_C:GND #PWR?
+U 1 1 5EA9CF9C
+P 1730 1300
+F 0 "#PWR?" H 1730 1050 50  0001 C CNN
+F 1 "GND" H 1735 1127 50  0000 C CNN
+F 2 "" H 1730 1300 60  0000 C CNN
+F 3 "" H 1730 1300 60  0000 C CNN
+	1    1730 1300
+	1    0    0    -1  
+$EndComp
+Text Label 1710 900  2    50   ~ 0
+TX
+Text Label 1720 1000 2    50   ~ 0
+RX
+Text Label 6700 3970 2    50   ~ 0
+TX
+Text Label 6700 4070 2    50   ~ 0
+RX
+Wire Wire Line
+	5050 2270 4900 2270
+Wire Wire Line
+	5050 2370 4900 2370
+$Comp
+L ESP32-PoE-ISO_Rev_C:GND #PWR?
+U 1 1 5EAA065D
+P 4900 2370
+F 0 "#PWR?" H 4900 2120 50  0001 C CNN
+F 1 "GND" V 4905 2242 50  0000 R CNN
+F 2 "" H 4900 2370 60  0000 C CNN
+F 3 "" H 4900 2370 60  0000 C CNN
+	1    4900 2370
+	0    1    1    0   
+$EndComp
+Text Label 1725 1100 2    50   ~ 0
+~RST
+Text Label 4900 2270 0    50   ~ 0
+~RST
+$Comp
+L Device:Crystal Y?
+U 1 1 5EAA28A8
+P 7100 2270
+F 0 "Y?" V 7054 2401 50  0000 L CNN
+F 1 "Crystal" V 7145 2401 50  0000 L CNN
+F 2 "" H 7100 2270 50  0001 C CNN
+F 3 "~" H 7100 2270 50  0001 C CNN
+	1    7100 2270
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 2270 6765 2270
+Wire Wire Line
+	6765 2270 6765 2000
+Wire Wire Line
+	6765 2000 7100 2000
+Wire Wire Line
+	7100 2000 7100 2120
+Wire Wire Line
+	7100 2420 6765 2420
+Wire Wire Line
+	6765 2420 6765 2370
+Wire Wire Line
+	6765 2370 6450 2370
+$Comp
+L Memory_EEPROM:24LC256 U?
+U 1 1 5EAA550E
+P 9645 4765
+F 0 "U?" V 9705 4765 50  0000 C CNN
+F 1 "24LC256" V 9550 4765 50  0000 C CNN
+F 2 "" H 9645 4765 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21203m.pdf" H 9645 4765 50  0001 C CNN
+	1    9645 4765
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EAA6EEC
+P 9645 4465
+F 0 "#PWR?" H 9645 4315 50  0001 C CNN
+F 1 "+3.3V" H 9660 4638 50  0000 C CNN
+F 2 "" H 9645 4465 50  0001 C CNN
+F 3 "" H 9645 4465 50  0001 C CNN
+	1    9645 4465
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP32-PoE-ISO_Rev_C:GND #PWR?
+U 1 1 5EAA8310
+P 9645 5065
+F 0 "#PWR?" H 9645 4815 50  0001 C CNN
+F 1 "GND" H 9650 4892 50  0000 C CNN
+F 2 "" H 9645 5065 60  0000 C CNN
+F 3 "" H 9645 5065 60  0000 C CNN
+	1    9645 5065
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP32-PoE-ISO_Rev_C:GND #PWR?
+U 1 1 5EAA91E7
+P 10450 5105
+F 0 "#PWR?" H 10450 4855 50  0001 C CNN
+F 1 "GND" H 10455 4932 50  0000 C CNN
+F 2 "" H 10450 5105 60  0000 C CNN
+F 3 "" H 10450 5105 60  0000 C CNN
+	1    10450 5105
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10045 4665 10450 4665
+Wire Wire Line
+	10045 4865 10450 4865
+Connection ~ 10450 4865
+Wire Wire Line
+	10450 4865 10450 5105
+Wire Wire Line
+	10045 4765 10450 4765
+Wire Wire Line
+	10450 4665 10450 4765
+Connection ~ 10450 4765
+Wire Wire Line
+	10450 4765 10450 4865
+$Comp
+L Device:R R?
+U 1 1 5EAABA07
+P 8785 4665
+F 0 "R?" V 8578 4665 50  0000 C CNN
+F 1 "R" V 8669 4665 50  0000 C CNN
+F 2 "" V 8715 4665 50  0001 C CNN
+F 3 "~" H 8785 4665 50  0001 C CNN
+	1    8785 4665
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EAAC8CA
+P 8635 4665
+F 0 "#PWR?" H 8635 4515 50  0001 C CNN
+F 1 "+3.3V" V 8650 4793 50  0000 L CNN
+F 2 "" H 8635 4665 50  0001 C CNN
+F 3 "" H 8635 4665 50  0001 C CNN
+	1    8635 4665
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8935 4665 9245 4665
+Text Label 9120 4765 0    50   ~ 0
+SCL
+Wire Wire Line
+	9120 4765 9245 4765
+Text Label 9065 4665 0    50   ~ 0
+SDA
+$Comp
+L ESP32-PoE-ISO_Rev_C:GND #PWR?
+U 1 1 5EAAF483
+P 9100 4950
+F 0 "#PWR?" H 9100 4700 50  0001 C CNN
+F 1 "GND" H 9105 4777 50  0000 C CNN
+F 2 "" H 9100 4950 60  0000 C CNN
+F 3 "" H 9100 4950 60  0000 C CNN
+	1    9100 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4950 9100 4865
+Wire Wire Line
+	9100 4865 9245 4865
+Text Label 6700 3870 2    50   ~ 0
+SDA
+Text Label 6700 3770 2    50   ~ 0
+SCL
+$EndSCHEMATC
