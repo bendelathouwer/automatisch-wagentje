@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -340,8 +340,6 @@ Wire Wire Line
 Wire Wire Line
 	6450 2970 6775 2970
 Wire Wire Line
-	6450 3470 6775 3470
-Wire Wire Line
 	6450 3370 6770 3370
 Wire Wire Line
 	6450 3270 6765 3270
@@ -349,4 +347,25 @@ Wire Wire Line
 	6450 3170 6765 3170
 Wire Wire Line
 	6450 3070 6770 3070
+Text HLabel 6770 2570 2    50   Input ~ 0
+IC1.MOTORIO1
+Text HLabel 6770 2670 2    50   Input ~ 0
+IC1.MOTORIO2
+Text HLabel 6775 2770 2    50   Input ~ 0
+IC1.MOTORIO3
+Text HLabel 6770 2870 2    50   Input ~ 0
+IC1.MOTORIO4
+Text HLabel 6775 2970 2    50   Input ~ 0
+IC1.MOTORIO5
+Text HLabel 6770 3070 2    50   Input ~ 0
+IC1.MOTORIO6
+Text HLabel 6765 3170 2    50   Input ~ 0
+IC1.MOTORIO7
+Text HLabel 6765 3270 2    50   Input ~ 0
+IC1.MOTORIO8
+Text HLabel 6770 3370 2    50   Input ~ 0
+IC1.MOTORIO9
+NoConn ~ 6450 3470
+NoConn ~ 6450 3570
+NoConn ~ 6450 3670
 $EndSCHEMATC

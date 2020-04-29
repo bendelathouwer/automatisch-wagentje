@@ -1,0 +1,120 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L modules:RC_Connector CON3
+U 1 1 5EAE14E5
+P 3440 1375
+F 0 "CON?" V 3574 1347 50  0000 R CNN
+F 1 "RC_Connector" V 3483 1347 50  0000 R CNN
+F 2 "" H 3440 1375 50  0001 C CNN
+F 3 "" H 3440 1375 50  0001 C CNN
+	1    3440 1375
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3290 1475
+$Comp
+L modules:RC_Connector CON2
+U 1 1 5EAE0F7C
+P 2270 1345
+F 0 "CON?" V 2404 1317 50  0000 R CNN
+F 1 "RC_Connector" V 2313 1317 50  0000 R CNN
+F 2 "" H 2270 1345 50  0001 C CNN
+F 3 "" H 2270 1345 50  0001 C CNN
+	1    2270 1345
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2020 1445 2020 1640
+$Comp
+L ESP32-PoE-ISO_Rev_C:GND #PWR?
+U 1 1 5EAE279C
+P 2220 1835
+F 0 "#PWR?" H 2220 1585 50  0001 C CNN
+F 1 "GND" H 2225 1662 50  0000 C CNN
+F 2 "" H 2220 1835 60  0000 C CNN
+F 3 "" H 2220 1835 60  0000 C CNN
+	1    2220 1835
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2220 1445 2220 1835
+$Comp
+L Jumper:SolderJumper_3_Open JP?
+U 1 1 5EAE366C
+P 1800 3130
+F 0 "JP?" H 1800 3243 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 1800 3334 50  0000 C CNN
+F 2 "" H 1800 3130 50  0001 C CNN
+F 3 "~" H 1800 3130 50  0001 C CNN
+	1    1800 3130
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 2980 1800 2770
+Wire Wire Line
+	1800 2770 2120 2770
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EAE528A
+P 2145 2995
+F 0 "#PWR?" H 2145 2845 50  0001 C CNN
+F 1 "+3.3V" H 2290 3065 50  0000 C CNN
+F 2 "" H 2145 2995 50  0001 C CNN
+F 3 "" H 2145 2995 50  0001 C CNN
+	1    2145 2995
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3130 2145 3130
+Wire Wire Line
+	2145 3130 2145 2995
+$Comp
+L power:+5V #PWR?
+U 1 1 5EAE681E
+P 1450 2845
+F 0 "#PWR?" H 1450 2695 50  0001 C CNN
+F 1 "+5V" H 1465 3018 50  0000 C CNN
+F 2 "" H 1450 2845 50  0001 C CNN
+F 3 "" H 1450 2845 50  0001 C CNN
+	1    1450 2845
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2845 1450 3130
+Wire Wire Line
+	1450 3130 1600 3130
+Wire Wire Line
+	2120 1445 2120 2770
+Text HLabel 2020 1640 3    50   Input ~ 0
+CON2.RC_OUT
+Wire Wire Line
+	3190 1475 3190 1675
+$Comp
+L ESP32-PoE-ISO_Rev_C:GND #PWR?
+U 1 1 5EAEB934
+P 3390 1615
+F 0 "#PWR?" H 3390 1365 50  0001 C CNN
+F 1 "GND" H 3395 1442 50  0000 C CNN
+F 2 "" H 3390 1615 60  0000 C CNN
+F 3 "" H 3390 1615 60  0000 C CNN
+	1    3390 1615
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3390 1475 3390 1615
+Text HLabel 3190 1675 3    50   Input ~ 0
+CON3.RC_OUT
+$EndSCHEMATC
