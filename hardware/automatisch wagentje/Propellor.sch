@@ -84,7 +84,7 @@ Wire Wire Line
 	6495 3910 6635 3910
 Wire Wire Line
 	6495 4010 6645 4010
-Text Label 6635 3910 3    50   ~ 0
+Text Label 6635 3910 2    50   ~ 0
 TX
 Text Label 6645 4010 2    50   ~ 0
 RX
@@ -301,7 +301,7 @@ Wire Wire Line
 Wire Wire Line
 	5095 2510 4975 2510
 Text HLabel 4920 3010 0    50   Input ~ 0
-RX
+IC1.RX
 $Comp
 L MCU_Parallax:P8X32A-D40 U1
 U 1 1 5EA67553
@@ -314,15 +314,15 @@ F 3 "https://www.parallax.com/sites/default/files/downloads/P8X32A-Propeller-Dat
 	1    0    0    -1  
 $EndComp
 Text HLabel 4920 2910 0    50   Input ~ 0
-GPIO0
+IC1.GPIO0
 Text HLabel 4915 2810 0    50   Input ~ 0
-RTS
+IC1.RTS
 Text HLabel 4915 2710 0    50   Input ~ 0
-GPIO2
+IC1.GPIO2
 Text HLabel 4910 2610 0    50   Input ~ 0
-CH_PD
+IC1.CH_PD
 Text HLabel 4975 2510 0    50   Input ~ 0
-TX
+IC1.TX
 $Comp
 L programmers:propstick CON?
 U 1 1 5EA811FA
@@ -334,4 +334,34 @@ F 3 "" H 2185 1115 50  0001 C CNN
 	1    2185 1115
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	6495 2510 6800 2510
+Wire Wire Line
+	6495 2610 6805 2610
+Wire Wire Line
+	6495 2710 6805 2710
+Wire Wire Line
+	6495 2810 6810 2810
+Wire Wire Line
+	6495 2910 6815 2910
+Wire Wire Line
+	6495 3010 6820 3010
+Wire Wire Line
+	6495 3110 6830 3110
+Wire Wire Line
+	6495 3210 6830 3210
+Wire Wire Line
+	6495 3310 6840 3310
+Wire Wire Line
+	6495 3410 6840 3410
+Wire Wire Line
+	6495 3510 6845 3510
+Wire Wire Line
+	6495 3710 6685 3710
+Wire Wire Line
+	6495 3810 6680 3810
+Text Label 6680 3810 2    50   ~ 0
+SDA
+Text Label 6685 3710 2    50   ~ 0
+SCL
 $EndSCHEMATC
