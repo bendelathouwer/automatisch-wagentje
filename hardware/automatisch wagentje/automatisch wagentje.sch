@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -207,4 +207,10 @@ F7 "MOD1.TX" I R 1915 3720 50
 $EndSheet
 Text Notes 1350 4005 1    50   ~ 0
 RX met TX op controller \nTX met RX op controller\n\n
+$Sheet
+S 1065 4425 805  905 
+U 5EAB5808
+F0 "encoder" 50
+F1 "encoder.sch" 50
+$EndSheet
 $EndSCHEMATC

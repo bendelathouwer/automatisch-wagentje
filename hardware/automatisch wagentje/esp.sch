@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L modulles:ESP8266 MOD1
+L modulles:ESP8266 MOD?
 U 1 1 5EACD8E7
 P 5000 3035
 F 0 "MOD?" H 5242 2220 50  0000 C CNN
